@@ -23,3 +23,28 @@ PRODUCT_COPY_FILES += \
 # Pixel Camera Services / Camera extensions
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/permissions/permissions_com.google.android.apps.camera.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions_com.google.android.apps.camera.services.xml
+
+# wireless_charger HAL service
+include device/google/gs-common/wireless_charger/wireless_charger.mk
+
+# Build necessary packages for vendor
+
+# Codec2
+PRODUCT_PACKAGES += \
+    libexynosv4l2
+
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.location.gps.prebuilt.xml \
+    liblzma.vendor \
+    libunwindstack.vendor
+
+# Graphics
+PRODUCT_PACKAGES += \
+    libEGL_angle \
+    libGLESv1_CM_angle \
+    libGLESv2_angle
+
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.dynamic_sensor_hal
