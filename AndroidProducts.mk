@@ -21,6 +21,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_komodo.mk \
     $(LOCAL_DIR)/aosp_komodo_fullmte.mk \
     $(LOCAL_DIR)/factory_komodo.mk \
+    $(LOCAL_DIR)/lineage_komodo.mk \
     $(LOCAL_DIR)/aosp_ripcurrentpro.mk \
     $(LOCAL_DIR)/aosp_ripcurrentpro_fullmte.mk \
     $(LOCAL_DIR)/factory_ripcurrentpro.mk \
