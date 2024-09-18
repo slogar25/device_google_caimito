@@ -27,6 +27,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Pixel Sepolicy
 TARGET_INCLUDE_PIXEL_SEPOLICY := false
 
+# Keys
+TARGET_BUILD_FULLY_SIGN := true
+
 # More dumb shit, sort of important
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9 Pro XL
