@@ -20,8 +20,6 @@ TARGET_SCREEN_DENSITY := 480
 BOARD_USES_GENERIC_AUDIO := true
 USES_DEVICE_GOOGLE_CAIMITO := true
 
-SELINUX_IGNORE_NEVERALLOWS := true
-
 include device/google/caimito/device-caimito-common.mk
 
 include device/google/zumapro/BoardConfig-common.mk
