@@ -3,6 +3,8 @@
 # Inherit some dumb shit
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+$(call inherit-product-if-exists, vendor/google/pixel-additional/config.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/google/caimito/aosp_komodo.mk)
 
@@ -12,14 +14,15 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_CALL_RECORDING := true
-#TARGET_INCLUDE_CARRIER_SERVICES := true
-#TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_INCLUDE_CARRIER_SERVICES := true
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_INCLUDE_CARRIER_SERVICES := true
 TARGET_SUPPORTS_ADPATIVE_CHARGING := true
-#yes adaptive is spelled wrong
 TARGET_SUPPORTS_GOOGLE_BATTERY := true
 MAINLINE_INCLUDE_VIRT_MODULE := true
 TARGET_SUPPORTS_NOW_PLAYING := true
 TARGET_SUPPORTS_GOOGLE_CAMERA := true
+WITH_GMS := true
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -29,6 +32,9 @@ TARGET_INCLUDE_PIXEL_SEPOLICY := false
 
 # Keys
 TARGET_BUILD_FULLY_SIGN := true
+
+TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX := true
+TARGET_DISABLE_EPPE := true
 
 # More dumb shit, sort of important
 PRODUCT_BRAND := google
