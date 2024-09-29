@@ -4,27 +4,24 @@
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Flags
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SUPPORTS_BLUR := true
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ICONS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
 # Launcher fucking madness
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+#TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := false
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
 
 # Lame ass flags
 WITH_GAPPS := true
 WITH_GMS := true
 
-#Xtras
-TARGET_IS_PIXEL_9 := true
-TARGET_IS_PIXEL := true
-
 # Inherit device configuration
 $(call inherit-product, device/google/caimito/aosp_komodo.mk)
+$(call inherit-product, device/google/zumapro/device-common.mk)
 
 # Inherit some common TheParasiteProject flags, WIP ofc
 #TARGET_SUPPORTS_GOOGLE_RECORDER := true
