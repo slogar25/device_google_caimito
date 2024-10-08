@@ -9,6 +9,25 @@ $(call inherit-product, device/google/caimito/aosp_komodo.mk)
 
 include device/google/caimito/device-lineage.mk
 
+# Flags
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_SUPPORTS_BLUR := true
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ICONS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Launcher fucking madness
+#TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+
+# Lame ass flags
+WITH_GAPPS := true
+WITH_GMS := true
+
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9 Pro XL
 PRODUCT_NAME := lineage_komodo
