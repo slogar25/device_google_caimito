@@ -27,11 +27,11 @@ source "${HELPER}"
 
 function vendor_imports() {
     cat <<EOF >>"$1"
-		"hardware/google/av",
-		"hardware/google/gchips",
-		"hardware/google/graphics/common",
-		"hardware/google/interfaces",
-		"hardware/google/pixel",
+        "hardware/google/av",
+        "hardware/google/gchips",
+        "hardware/google/graphics/common",
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
 EOF
 }
 
@@ -53,6 +53,15 @@ function lib_to_package_fixup_vendor_variants() {
             return 1
             ;;
     esac
+}
+
+# Added function to handle proto suffix fixup
+function lib_to_package_fixup_proto_suffix() {
+    if [[ "$1" == *"-proto" ]]; then
+        echo "$1-suffix"
+        return 0
+    fi
+    return 1
 }
 
 function lib_to_package_fixup() {
