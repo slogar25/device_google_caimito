@@ -60,13 +60,13 @@ product/etc/felica/mfs.cfg
 # Hardware Info
 product/etc/permissions/com.google.android.hardwareinfo.xml
 product/framework/libhwinfo.jar
-product/priv-app/HardwareInfo/HardwareInfo.apk;PRESIGNED
+product/priv-app/HardwareInfo/HardwareInfo.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # Hotword
-product/priv-app/HotwordEnrollmentOKGoogleFUSIONPro/HotwordEnrollmentOKGoogleFUSIONPro.apk;PRESIGNED
-product/priv-app/HotwordEnrollmentXGoogleFUSIONPro/HotwordEnrollmentXGoogleFUSIONPro.apk;PRESIGNED
+product/priv-app/HotwordEnrollmentOKGoogleFUSIONPro/HotwordEnrollmentOKGoogleFUSIONPro.apk
+product/priv-app/HotwordEnrollmentXGoogleFUSIONPro/HotwordEnrollmentXGoogleFUSIONPro.apk
 
 # IMS
 product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
@@ -117,13 +117,13 @@ product/etc/permissions/com.android.sdm.plugins.dcmo.xml
 product/etc/permissions/com.android.sdm.plugins.diagmon.xml
 product/lib64/libdmengine.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmengine.so
 product/lib64/libdmjavaplugin.so;SYMLINK=product/priv-app/DMService/lib/arm64/libdmjavaplugin.so
-product/priv-app/CarrierSettings_signed_47.0.602606545/CarrierSettings_signed_47.0.602606545.apk;PRESIGNED
-product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
+product/priv-app/CarrierSettings/CarrierSettings.apk
+product/priv-app/CarrierWifi/CarrierWifi.apk
 product/priv-app/ConnMO/ConnMO.apk
 product/priv-app/DCMO/DCMO.apk
 product/priv-app/DMService/DMService.apk
 product/priv-app/DiagMon/DiagMon.apk
-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+product/priv-app/EuiccGoogle/EuiccGoogle.apk
 product/priv-app/TetheringEntitlement/TetheringEntitlement.apk
 system_ext/etc/default-permissions/default-permissions-euiccpixel.xml
 system_ext/etc/permissions/com.android.omadm.radioconfig.xml
@@ -133,20 +133,20 @@ system_ext/etc/permissions/com.google.euiccpixel.xml
 system_ext/etc/permissions/google-ril.xml
 system_ext/framework/RadioConfigLib.jar
 system_ext/framework/google-ril.jar
-system_ext/priv-app/CarrierSetup/CarrierSetup.apk;PRESIGNED
+system_ext/priv-app/CarrierSetup/CarrierSetup.apk
 system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk
 system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk
-system_ext/priv-app/EuiccSupportPixel-P23/EuiccSupportPixel-P23.apk;PRESIGNED
+system_ext/priv-app/EuiccSupportPixel-P23/EuiccSupportPixel-P23.apk
 system_ext/priv-app/EuiccSupportPixel-P23/Felica_Tag_66_Changer.apdu
 system_ext/priv-app/EuiccSupportPixel-P23/esim-full-v1.img
-system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk;PRESIGNED
+system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk
 system_ext/priv-app/RilConfigService/RilConfigService.apk
 system_ext/priv-app/grilservice/grilservice.apk;PRESIGNED
 system_ext/priv-app/ril-extension/ril-extension.apk;PRESIGNED
 
 # Temperature Sensor
 product/etc/sysconfig/firproximity.xml
-product/priv-app/HealthIntelligencePrebuilt-1762/HealthIntelligencePrebuilt-1762.apk;PRESIGNED
+product/priv-app/HealthIntelligencePrebuilt-1762/HealthIntelligencePrebuilt-1762.apk
 
 # VZW
 product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
@@ -156,8 +156,8 @@ product/etc/permissions/com.verizon.apn.xml
 product/etc/permissions/com.verizon.services.xml
 product/etc/permissions/features-verizon.xml
 product/etc/sysconfig/allowlist_com.android.omadm.service.xml
-product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED
+product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk
 product/priv-app/OemDmTrigger/OemDmTrigger.apk
 product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
 system_ext/etc/permissions/vzw_mvs_permissions.xml
-system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
+system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk
