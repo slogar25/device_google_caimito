@@ -27,6 +27,9 @@ $(call soong_config_set,caimito_bootloader,prebuilt_dir,$(RELEASE_GOOGLE_BOOTLOA
 TARGET_KERNEL_DIR ?= device/google/caimito-kernels/6.1/24D1
 TARGET_BOARD_KERNEL_HEADERS ?= device/google/caimito-kernels/6.1/24D1/kernel-headers
 
+# Kernel
+TARGET_PREBUILT_KERNEL := device/google/caimito-kernels/6.1/24D1/Image.lz4
+
 LOCAL_PATH := device/google/caimito
 
 ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
