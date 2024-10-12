@@ -9,6 +9,8 @@ $(call inherit-product, device/google/caimito/aosp_komodo.mk)
 
 include device/google/caimito/device-lineage.mk
 
+TARGET_DISABLE_EPPE := true
+
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9 Pro XL
 PRODUCT_NAME := lineage_komodo
