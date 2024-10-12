@@ -36,4 +36,6 @@ COMMON_LUNCH_CHOICES := \
     aosp_komodo-trunk_staging-userdebug \
     aosp_ripcurrentpro-trunk_staging-userdebug \
     aosp_ripcurrent24-trunk_staging-userdebug \
-    aosp_tokay-trunk_staging-userdebug
+    aosp_tokay-trunk_staging-userdebug \
+    lineage_komodo-eng \
+    lineage_komodo-userdebug
