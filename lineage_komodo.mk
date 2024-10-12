@@ -24,8 +24,8 @@ PRODUCT_NAME_FOR_ATTESTATION := komodo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=komodo \
-    PRIVATE_BUILD_DESC="komodo-user 14 AD1A.240530.047 12143574 release-keys"
+    PRIVATE_BUILD_DESC="komodo_beta-user 15 AP31.240617.015 12207491 release-keys"
 
-BUILD_FINGERPRINT := google/komodo/komodo:14/AD1A.240530.047/12143574:user/release-keys
+BUILD_FINGERPRINT := google/komodo_beta/komodo:15/AP31.240617.015/12207491:user/release-keys
 
 $(call inherit-product, vendor/google/komodo/komodo-vendor.mk)
