@@ -20,11 +20,13 @@ TARGET_SCREEN_DENSITY := 480
 BOARD_USES_GENERIC_AUDIO := true
 USES_DEVICE_GOOGLE_CAIMITO := true
 
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 include device/google/caimito/device-caimito-common.mk
 
 include device/google/zumapro/BoardConfig-common.mk
 -include vendor/google_devices/zumapro/prebuilts/BoardConfigVendor.mk
--include vendor/google_devices/komodo/proprietary/BoardConfigVendor.mk
+include vendor/google_devices/komodo/proprietary/BoardConfigVendor.mk
 include device/google/caimito-sepolicy/komodo-sepolicy.mk
 include device/google/caimito/wifi/BoardConfig-wifi.mk
 

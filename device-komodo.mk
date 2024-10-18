@@ -73,7 +73,7 @@ ifdef RELEASE_SVN_KOMODO
 TARGET_SVN ?= $(RELEASE_SVN_KOMODO)
 else
 # Set this for older releases that don't use build flag
-TARGET_SVN ?= 04
+TARGET_SVN ?= 06
 endif
 
 PRODUCT_VENDOR_PROPERTIES += \
@@ -280,6 +280,12 @@ PRODUCT_PACKAGES += \
 # PowerStats HAL
 PRODUCT_SOONG_NAMESPACES += \
     device/google/caimito/powerstats/komodo
+	
+# PowerShare
+include hardware/google/pixel/powershare/device.mk
+
+# wireless_charger HAL service
+include device/google/gs-common/wireless_charger/wireless_charger.mk
 
 # WiFi Overlay
 PRODUCT_PACKAGES += \
