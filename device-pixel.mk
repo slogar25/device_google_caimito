@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-pixel
 
 # Display
 PRODUCT_COPY_FILES += \
